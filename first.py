@@ -1,1 +1,1 @@
-print("Push this file to the remote repository")
+print("Push this file to the remote repository for the first time.")
