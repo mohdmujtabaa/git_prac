@@ -23,7 +23,6 @@ async def api_read_tasks(db: AsyncSession = Depends(get_db)):
     tasks = await read_tasks(db)
     return tasks
 
-
 # Create a task
 @app.post("/tasks/", response_model=TaskRead)
 async def api_create_task(task: TaskCreate, db: AsyncSession = Depends(get_db)):
@@ -52,7 +51,6 @@ async def api_delete_task(task_id: int, db: AsyncSession = Depends(get_db)):
     if not task:
         raise HTTPException(status_code=404, detail="Task not found")
     return {"detail": "Task deleted successfully"}
-
 
 # Run the server with the command below
 #uvicorn main:app --port 8001 --reload
