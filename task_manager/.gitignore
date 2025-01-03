@@ -1,0 +1,53 @@
+# Python-related files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+.env.*
+
+# Logs
+*.log
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+.env/
+
+# SQLite database files
+*.sqlite3
+*.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Test coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+
+# Docker
+*.dockerignore
+Dockerfile
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Git-related files
+*.orig
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Miscellaneous
+*.bak
+*.swp
+*.tmp
+
+# Task API-specific
+task_api.log
