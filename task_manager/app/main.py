@@ -1,9 +1,10 @@
 import logging
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
-from database import async_engine, Base, async_session_factory
-from crud import create_task, read_task, update_task, delete_task, read_tasks
-from schemas import TaskCreate, TaskRead, TaskUpdate
+from app import models, schemas, database, crud
+from app.database import async_engine, Base, async_session_factory
+from app.crud import create_task, read_task, update_task, delete_task, read_tasks
+from app.schemas import TaskCreate, TaskRead, TaskUpdate
 from typing import List, AsyncGenerator
 from logging.config import dictConfig
 

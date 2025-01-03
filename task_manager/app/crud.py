@@ -2,8 +2,8 @@ import logging
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from sqlalchemy import update, delete
-from models import Task
-from schemas import TaskCreate, TaskUpdate
+from app.models import Task
+from app.schemas import TaskCreate, TaskUpdate
 from datetime import datetime, timezone
 from typing import Optional
 from sqlalchemy.exc import SQLAlchemyError

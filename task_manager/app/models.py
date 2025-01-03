@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean, DateTime, Enum as SqlAlchemyEnum
-from database import Base
+from app.database import Base
 from enum import Enum
 from datetime import datetime, timezone
 
